@@ -2589,9 +2589,13 @@ if (uni.restoreGlobal) {
       load_succ(index) {
         formatAppLog("log", "at pages/reserve/reserve.vue:199", index);
         if (index == 1) {
-          this.loading_item_1 = false;
+          setTimeout(() => {
+            this.loading_item_1 = false;
+          }, 1e3);
         } else {
-          this.loading_item_2 = false;
+          setTimeout(() => {
+            this.loading_item_2 = false;
+          }, 1e3);
         }
       },
       get_picture(type, quji = false) {

@@ -198,10 +198,13 @@
 			load_succ(index) {
 				console.log(index);
 				if (index == 1) {
-					// 展示需要耗时，延迟一点
-					this.loading_item_1 = false
+					setTimeout(() => {
+						this.loading_item_1 = false
+					}, 1000)
 				} else {
-					this.loading_item_2 = false
+					setTimeout(() => {
+						this.loading_item_2 = false
+					}, 1000)
 				}
 			},
 			get_picture(type, quji = false) {
