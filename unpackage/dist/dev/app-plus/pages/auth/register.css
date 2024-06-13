@@ -1,0 +1,117 @@
+body {
+	background-image: url('../../static/bg.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.box-main{
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+
+.main[data-v-4bb68961] {
+		width: 40vw;
+		background-color: rgba(255, 255, 255, .7);
+		border-radius: 0.46875rem;
+		padding-top: 0.3125rem;
+		padding-left: 0.625rem;
+		padding-right: 0.625rem;
+		backdrop-filter: blur(0.3125rem);
+		-webkit-backdrop-filter: blur(0.3125rem);
+}
+.inline[data-v-4bb68961] {
+		display: flex;
+}
+.input_control-x[data-v-4bb68961] {
+		margin-top: 0.0625rem;
+		width: 80%;
+		height: 0.9375rem;
+		border: 2px solid rgb(247, 247, 247);
+		background-color: rgb(252, 252, 252);
+}
+.send[data-v-4bb68961] {
+		width: 20%;
+		height: 0.96875rem;
+		background-color: rgb(25, 150, 240);
+		color: white;
+		font-size: 0.25rem;
+		text-align: center;
+		line-height: 0.9375rem;
+		border-radius: 0.15625rem;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		margin-top: 0.0625rem;
+}
+.forget[data-v-4bb68961] {
+		color: rgb(145, 193, 231);
+		font-size: 0.3rem;
+}
+.register[data-v-4bb68961] {
+		width: 100%;
+		height: 0.9375rem;
+		/* color: white; */
+		border: 1px solid rgb(25, 150, 240);
+		color: rgb(25, 150, 240);
+		font-size: 0.4rem;
+		text-align: center;
+		line-height: 0.9375rem;
+		border-radius: 0.15625rem;
+		margin-top: 0.46875rem;
+}
+.code-login[data-v-4bb68961] {
+		color: rgb(25, 150, 240);
+		font-size: 0.3rem;
+}
+.option[data-v-4bb68961] {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 0.3125rem;
+		margin-bottom: 0.3125rem;
+}
+.login[data-v-4bb68961] {
+
+		width: 100%;
+		height: 0.9375rem;
+		/* color: white; */
+		background-color: rgb(25, 150, 240);
+		color: white;
+		font-size: 0.4rem;
+		text-align: center;
+		line-height: 0.9375rem;
+		border-radius: 0.15625rem;
+		margin-top: 0.46875rem;
+}
+.close[data-v-4bb68961] {
+		text-align: right;
+		/* padding-right: 10rpx; */
+		font-size: 0.3rem;
+}
+.form-control[data-v-4bb68961] {
+		margin-top: 0.625rem;
+}
+.input_name[data-v-4bb68961] {
+		font-size: 0.30rem;
+}
+.input_control[data-v-4bb68961] {
+		margin-top: 0.0625rem;
+		width: 100%;
+		height: 0.9375rem;
+		border: 2px solid rgb(247, 247, 247);
+		background-color: rgb(252, 252, 252);
+}
+.input_control[data-v-4bb68961]:hover {
+		background-color: white;
+		box-shadow: 0 0.0625rem rgb(64, 150, 220);
+}
+.title[data-v-4bb68961] {
+		text-align: center;
+		font-size: 0.6rem;
+}
+.main-box[data-v-4bb68961] {
+		display: flex;
+		justify-content: center;
+		margin-top: 5vh;
+		font-size: 0.5rem;
+		color: rgb(77, 100, 116);
+}

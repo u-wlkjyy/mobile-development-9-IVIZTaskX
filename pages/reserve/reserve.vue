@@ -196,7 +196,6 @@
 		},
 		methods: {
 			load_succ(index) {
-				console.log(index);
 				if (index == 1) {
 					setTimeout(() => {
 						this.loading_item_1 = false

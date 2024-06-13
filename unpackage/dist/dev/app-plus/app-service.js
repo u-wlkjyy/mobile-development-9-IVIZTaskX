@@ -38,7 +38,7 @@ if (uni.restoreGlobal) {
     }
     return target;
   };
-  const _sfc_main$a = {
+  const _sfc_main$e = {
     data() {
       return {};
     },
@@ -49,27 +49,25 @@ if (uni.restoreGlobal) {
         uni.navigateTo({
           url: "/pages/reserve/reserve"
         });
+      },
+      login() {
+        uni.navigateTo({
+          url: "/pages/auth/login"
+        });
       }
     }
   };
-  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "content" }, [
       vue.createElementVNode("button", {
         onClick: _cache[0] || (_cache[0] = (...args) => $options.jump360 && $options.jump360(...args))
-      }, "360全景页面")
+      }, "360全景页面"),
+      vue.createElementVNode("button", {
+        onClick: _cache[1] || (_cache[1] = (...args) => $options.login && $options.login(...args))
+      }, "登录")
     ]);
   }
-  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/pages/index/index.vue"]]);
-  function formatAppLog(type, filename, ...args) {
-    if (uni.__log__) {
-      uni.__log__(type, filename, ...args);
-    } else {
-      console[type].apply(console, [...args, filename]);
-    }
-  }
-  function resolveEasycom(component, easycom) {
-    return typeof component === "string" ? easycom : component;
-  }
+  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/pages/index/index.vue"]]);
   const fontData = [
     {
       "font_class": "arrow-down",
@@ -720,7 +718,7 @@ if (uni.restoreGlobal) {
     const reg = /^[0-9]*$/g;
     return typeof val === "number" || reg.test(val) ? val + "px" : val;
   };
-  const _sfc_main$9 = {
+  const _sfc_main$d = {
     name: "UniIcons",
     emits: ["click"],
     props: {
@@ -774,7 +772,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "text",
       {
@@ -789,8 +787,18 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__scopeId", "data-v-d31e1c47"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
-  const _sfc_main$8 = {
+  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__scopeId", "data-v-d31e1c47"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
+  function formatAppLog(type, filename, ...args) {
+    if (uni.__log__) {
+      uni.__log__(type, filename, ...args);
+    } else {
+      console[type].apply(console, [...args, filename]);
+    }
+  }
+  function resolveEasycom(component, easycom) {
+    return typeof component === "string" ? easycom : component;
+  }
+  const _sfc_main$c = {
     name: "UniBadge",
     emits: ["click"],
     props: {
@@ -913,7 +921,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-badge--x" }, [
       vue.renderSlot(_ctx.$slots, "default", {}, void 0, true),
       $props.text ? (vue.openBlock(), vue.createElementBlock(
@@ -930,8 +938,8 @@ if (uni.restoreGlobal) {
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__scopeId", "data-v-c97cb896"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-badge/components/uni-badge/uni-badge.vue"]]);
-  const _sfc_main$7 = {
+  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__scopeId", "data-v-c97cb896"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-badge/components/uni-badge/uni-badge.vue"]]);
+  const _sfc_main$b = {
     name: "UniListItem",
     emits: ["click", "switchChange"],
     props: {
@@ -1168,7 +1176,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
     const _component_uni_badge = resolveEasycom(vue.resolveDynamicComponent("uni-badge"), __easycom_1$1);
     return vue.openBlock(), vue.createElementBlock("view", {
@@ -1297,8 +1305,8 @@ if (uni.restoreGlobal) {
       })) : vue.createCommentVNode("v-if", true)
     ], 14, ["hover-class"]);
   }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__scopeId", "data-v-c7524739"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-list/components/uni-list-item/uni-list-item.vue"]]);
-  const _sfc_main$6 = {
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__scopeId", "data-v-c7524739"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-list/components/uni-list-item/uni-list-item.vue"]]);
+  const _sfc_main$a = {
     name: "uniList",
     "mp-weixin": {
       options: {
@@ -1344,7 +1352,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-list uni-border-top-bottom" }, [
       $props.border ? (vue.openBlock(), vue.createElementBlock("view", {
         key: 0,
@@ -1357,8 +1365,8 @@ if (uni.restoreGlobal) {
       })) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__scopeId", "data-v-c2f1266a"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-list/components/uni-list/uni-list.vue"]]);
-  const _sfc_main$5 = {
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__scopeId", "data-v-c2f1266a"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-list/components/uni-list/uni-list.vue"]]);
+  const _sfc_main$9 = {
     name: "uniCollapseItem",
     props: {
       // 列表标题
@@ -1528,7 +1536,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-collapse-item" }, [
       vue.createCommentVNode(" onClick(!isOpen) "),
@@ -1605,8 +1613,8 @@ if (uni.restoreGlobal) {
       )
     ]);
   }
-  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__scopeId", "data-v-3d2dde9f"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-collapse/components/uni-collapse-item/uni-collapse-item.vue"]]);
-  const _sfc_main$4 = {
+  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__scopeId", "data-v-3d2dde9f"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-collapse/components/uni-collapse-item/uni-collapse-item.vue"]]);
+  const _sfc_main$8 = {
     name: "uniCollapse",
     emits: ["change", "activeItem", "input", "update:modelValue"],
     props: {
@@ -1717,12 +1725,12 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-collapse" }, [
       vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
     ]);
   }
-  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$3], ["__scopeId", "data-v-3f050360"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-collapse/components/uni-collapse/uni-collapse.vue"]]);
+  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__scopeId", "data-v-3f050360"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-collapse/components/uni-collapse/uni-collapse.vue"]]);
   class MPAnimation {
     constructor(options, _this) {
       this.options = options;
@@ -1835,7 +1843,7 @@ if (uni.restoreGlobal) {
     clearTimeout(_this.timer);
     return new MPAnimation(option, _this);
   }
-  const _sfc_main$3 = {
+  const _sfc_main$7 = {
     name: "uniTransition",
     emits: ["click", "change"],
     props: {
@@ -2086,7 +2094,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.withDirectives((vue.openBlock(), vue.createElementBlock("view", {
       ref: "ani",
       animation: $data.animationData,
@@ -2099,8 +2107,8 @@ if (uni.restoreGlobal) {
       [vue.vShow, $data.isShow]
     ]);
   }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
-  const _sfc_main$2 = {
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
+  const _sfc_main$6 = {
     name: "uniPopup",
     components: {},
     emits: ["change", "maskClick"],
@@ -2450,7 +2458,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_transition = resolveEasycom(vue.resolveDynamicComponent("uni-transition"), __easycom_0);
     return $data.showPopup ? (vue.openBlock(), vue.createElementBlock(
       "view",
@@ -2510,7 +2518,7 @@ if (uni.restoreGlobal) {
       /* CLASS */
     )) : vue.createCommentVNode("v-if", true);
   }
-  const __easycom_4 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__scopeId", "data-v-4dd3c44b"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
+  const __easycom_4 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__scopeId", "data-v-4dd3c44b"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
   const base_url$1 = "http://192.168.1.100:8080/zh-admin";
   const config = {
     base_url: base_url$1
@@ -2567,7 +2575,7 @@ if (uni.restoreGlobal) {
     base_url,
     has_login
   };
-  const _sfc_main$1 = {
+  const _sfc_main$5 = {
     data() {
       return {
         loading_gif: "/static/loading.gif",
@@ -2587,7 +2595,6 @@ if (uni.restoreGlobal) {
     },
     methods: {
       load_succ(index) {
-        formatAppLog("log", "at pages/reserve/reserve.vue:199", index);
         if (index == 1) {
           setTimeout(() => {
             this.loading_item_1 = false;
@@ -2728,7 +2735,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_list_item = resolveEasycom(vue.resolveDynamicComponent("uni-list-item"), __easycom_0$1);
     const _component_uni_list = resolveEasycom(vue.resolveDynamicComponent("uni-list"), __easycom_1);
     const _component_uni_collapse_item = resolveEasycom(vue.resolveDynamicComponent("uni-collapse-item"), __easycom_2);
@@ -2901,9 +2908,707 @@ if (uni.restoreGlobal) {
       /* STABLE_FRAGMENT */
     );
   }
-  const PagesReserveReserve = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__scopeId", "data-v-d27d3a22"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/pages/reserve/reserve.vue"]]);
+  const PagesReserveReserve = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__scopeId", "data-v-d27d3a22"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/pages/reserve/reserve.vue"]]);
+  const _sfc_main$4 = {
+    data() {
+      return {
+        phone: null,
+        password: null
+      };
+    },
+    methods: {
+      gotoForget() {
+        uni.navigateTo({
+          url: "/pages/auth/forget"
+        });
+      },
+      isEmpty(value, msg) {
+        if (value == null || value == "") {
+          uni.showToast({
+            title: msg,
+            icon: "none"
+          });
+          throw new Error(msg);
+        }
+        return true;
+      },
+      gotoRegister() {
+        uni.navigateTo({
+          url: "/pages/auth/register"
+        });
+      },
+      loginEvent() {
+        this.isEmpty(this.phone, "手机号码不能为空");
+        this.isEmpty(this.password, "密码不能为空");
+        var uri = "";
+        var postdata = {};
+        if (this.phone.length == 11) {
+          uri = "/api/phone/login";
+          postdata = {
+            "phone": this.phone,
+            "password": this.password
+          };
+        } else {
+          uri = "/login";
+          postdata = {
+            "username": this.phone,
+            "password": this.password
+          };
+        }
+        request.post(uri, postdata).then((res) => {
+          if (res.data.code == 200) {
+            uni.setStorageSync("auth_token", res.data.token);
+            uni.showToast({
+              title: "登录成功",
+              icon: "success"
+            });
+            uni.redirectTo({
+              url: "/pages/index/index"
+            });
+          } else {
+            uni.showToast({
+              title: res.data.msg,
+              icon: "none"
+            });
+          }
+        });
+      },
+      codeLogin() {
+        uni.navigateTo({
+          url: "/pages/auth/code-login"
+        });
+      }
+    }
+  };
+  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", null, [
+      vue.createElementVNode("view", { class: "main-box" }, [
+        vue.createElementVNode("view", { class: "main" }, [
+          vue.createElementVNode("view", { class: "title" }, "用户登录"),
+          vue.createElementVNode("view", { class: "form-control" }, [
+            vue.createElementVNode("label", {
+              for: "",
+              class: "input_name"
+            }, "手机号码"),
+            vue.withDirectives(vue.createElementVNode(
+              "input",
+              {
+                type: "text",
+                class: "input_control",
+                "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $data.phone = $event)
+              },
+              null,
+              512
+              /* NEED_PATCH */
+            ), [
+              [vue.vModelText, $data.phone]
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "form-control" }, [
+            vue.createElementVNode("label", {
+              for: "",
+              class: "input_name"
+            }, "密码"),
+            vue.withDirectives(vue.createElementVNode(
+              "input",
+              {
+                type: "password",
+                class: "input_control",
+                "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => $data.password = $event)
+              },
+              null,
+              512
+              /* NEED_PATCH */
+            ), [
+              [vue.vModelText, $data.password]
+            ])
+          ]),
+          vue.createElementVNode("view", {
+            class: "register",
+            onClick: _cache[2] || (_cache[2] = (...args) => $options.gotoRegister && $options.gotoRegister(...args))
+          }, "用户注册"),
+          vue.createElementVNode("view", {
+            class: "login",
+            onClick: _cache[3] || (_cache[3] = (...args) => $options.loginEvent && $options.loginEvent(...args))
+          }, "登录"),
+          vue.createElementVNode("view", { class: "option" }, [
+            vue.createElementVNode("view", {
+              class: "forget",
+              onClick: _cache[4] || (_cache[4] = (...args) => $options.gotoForget && $options.gotoForget(...args))
+            }, "忘记密码？"),
+            vue.createElementVNode("view", {
+              class: "code-login",
+              onClick: _cache[5] || (_cache[5] = (...args) => $options.codeLogin && $options.codeLogin(...args))
+            }, "免密登录")
+          ])
+        ])
+      ])
+    ]);
+  }
+  const PagesAuthLogin = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$3], ["__scopeId", "data-v-2cc9f8c3"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/pages/auth/login.vue"]]);
+  const _sfc_main$3 = {
+    data() {
+      return {
+        phone: null,
+        password: null,
+        new_password: null,
+        codeMsg: "发送验证码",
+        codeTTL: 0
+      };
+    },
+    methods: {
+      gotoForget() {
+        uni.navigateTo({
+          url: "/pages/auth/forget"
+        });
+      },
+      isEmpty(value, msg) {
+        if (value == null || value == "") {
+          uni.showToast({
+            title: msg,
+            icon: "none"
+          });
+          throw new Error(msg);
+        }
+        return true;
+      },
+      loginEvent() {
+        this.isEmpty(this.phone, "手机号码不能为空");
+        this.isEmpty(this.password, "验证码不能为空");
+        this.isEmpty(this.new_password, "新密码不能为空");
+        var uri = "";
+        var postdata = {};
+        uri = "/api/user/register";
+        postdata = {
+          "phonenumber": this.phone,
+          "code": this.password,
+          "password": this.new_password
+        };
+        request.post(uri, postdata).then((res) => {
+          if (res.data.code == 200) {
+            uni.showToast({
+              title: "用户注册成功",
+              icon: "success"
+            });
+            uni.redirectTo({
+              url: "/pages/auth/login"
+            });
+          } else {
+            uni.showToast({
+              title: res.data.msg,
+              icon: "none"
+            });
+          }
+        });
+      },
+      passwordLogin() {
+        uni.navigateTo({
+          url: "/pages/account/login"
+        });
+      },
+      toBackLogin() {
+        uni.navigateTo({
+          url: "/pages/auth/login"
+        });
+      },
+      sendCode() {
+        if (this.codeTTL > 0)
+          return;
+        this.isEmpty(this.phone, "手机号码不能为空");
+        request.get("/api/user/code", {
+          phone: this.phone
+        }).then((res) => {
+          formatAppLog("log", "at pages/auth/register.vue:248", res.data);
+          if (res.data.code == 200 || res.data.code == 500) {
+            uni.showToast({
+              title: res.data.msg,
+              icon: "none"
+            });
+          } else {
+            uni.showToast({
+              title: res.data.msg,
+              icon: "none"
+            });
+            return;
+          }
+        });
+        this.codeTTL = 60;
+        var intervel = setInterval(() => {
+          this.codeTTL--;
+          if (this.codeTTL == 0) {
+            this.codeMsg = "发送验证码";
+            clearInterval(intervel);
+          } else {
+            this.codeMsg = this.codeTTL + "s";
+          }
+        }, 1e3);
+      }
+    }
+  };
+  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", null, [
+      vue.createElementVNode("view", { class: "main-box" }, [
+        vue.createElementVNode("view", { class: "main" }, [
+          vue.createElementVNode("view", { class: "title" }, "用户注册"),
+          vue.createElementVNode("view", { class: "form-control" }, [
+            vue.createElementVNode("label", {
+              for: "",
+              class: "input_name"
+            }, "手机号码"),
+            vue.withDirectives(vue.createElementVNode(
+              "input",
+              {
+                type: "text",
+                class: "input_control",
+                "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $data.phone = $event)
+              },
+              null,
+              512
+              /* NEED_PATCH */
+            ), [
+              [vue.vModelText, $data.phone]
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "form-control" }, [
+            vue.createElementVNode("label", {
+              for: "",
+              class: "input_name"
+            }, "验证码"),
+            vue.createElementVNode("view", { class: "inline" }, [
+              vue.withDirectives(vue.createElementVNode(
+                "input",
+                {
+                  type: "text",
+                  class: "input_control-x",
+                  "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => $data.password = $event)
+                },
+                null,
+                512
+                /* NEED_PATCH */
+              ), [
+                [vue.vModelText, $data.password]
+              ]),
+              vue.createElementVNode(
+                "text",
+                {
+                  class: "send",
+                  onClick: _cache[2] || (_cache[2] = (...args) => $options.sendCode && $options.sendCode(...args))
+                },
+                vue.toDisplayString($data.codeMsg),
+                1
+                /* TEXT */
+              )
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "form-control" }, [
+            vue.createElementVNode("label", {
+              for: "",
+              class: "input_name"
+            }, "密码"),
+            vue.withDirectives(vue.createElementVNode(
+              "input",
+              {
+                type: "password",
+                class: "input_control",
+                "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => $data.new_password = $event)
+              },
+              null,
+              512
+              /* NEED_PATCH */
+            ), [
+              [vue.vModelText, $data.new_password]
+            ])
+          ]),
+          vue.createElementVNode("view", {
+            class: "login",
+            onClick: _cache[4] || (_cache[4] = (...args) => $options.loginEvent && $options.loginEvent(...args))
+          }, "注册"),
+          vue.createElementVNode("view", { class: "option" }, [
+            vue.createElementVNode("view", {
+              class: "forget",
+              onClick: _cache[5] || (_cache[5] = (...args) => $options.gotoForget && $options.gotoForget(...args))
+            }, "忘记密码？"),
+            vue.createElementVNode("view", {
+              class: "code-login",
+              onClick: _cache[6] || (_cache[6] = (...args) => $options.toBackLogin && $options.toBackLogin(...args))
+            }, "返回登录")
+          ])
+        ])
+      ])
+    ]);
+  }
+  const PagesAuthRegister = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2], ["__scopeId", "data-v-4bb68961"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/pages/auth/register.vue"]]);
+  const _sfc_main$2 = {
+    data() {
+      return {
+        phone: null,
+        password: null,
+        new_password: null,
+        codeMsg: "发送验证码",
+        codeTTL: 0
+      };
+    },
+    methods: {
+      isEmpty(value, msg) {
+        if (value == null || value == "") {
+          uni.showToast({
+            title: msg,
+            icon: "none"
+          });
+          throw new Error(msg);
+        }
+        return true;
+      },
+      gotoRegister() {
+        uni.navigateTo({
+          url: "/pages/auth/register"
+        });
+      },
+      gotoForget() {
+        uni.navigateTo({
+          url: "/pages/auth/forget"
+        });
+      },
+      loginEvent() {
+        this.isEmpty(this.phone, "手机号码不能为空");
+        this.isEmpty(this.password, "验证码不能为空");
+        var uri = "";
+        var postdata = {};
+        uri = "/api/phone/login";
+        postdata = {
+          "phone": this.phone,
+          "code": this.password
+        };
+        request.post(uri, postdata).then((res) => {
+          if (res.data.code == 200) {
+            uni.setStorageSync("auth_token", res.data.token);
+            uni.showToast({
+              title: "登录成功",
+              icon: "success"
+            });
+            uni.redirectTo({
+              url: "/pages/index/index"
+            });
+          } else {
+            uni.showToast({
+              title: res.data.msg,
+              icon: "none"
+            });
+          }
+        });
+      },
+      passwordLogin() {
+        uni.navigateTo({
+          url: "/pages/account/login"
+        });
+      },
+      toBackLogin() {
+        uni.navigateTo({
+          url: "/pages/auth/login"
+        });
+      },
+      sendCode() {
+        if (this.codeTTL > 0)
+          return;
+        this.isEmpty(this.phone, "手机号码不能为空");
+        request.get("/api/user/code", {
+          phone: this.phone
+        }).then((res) => {
+          formatAppLog("log", "at pages/auth/code-login.vue:249", res.data);
+          if (res.data.code == 200 || res.data.code == 500) {
+            uni.showToast({
+              title: res.data.msg,
+              icon: "none"
+            });
+          } else {
+            uni.showToast({
+              title: res.data.msg,
+              icon: "none"
+            });
+            return;
+          }
+        });
+        this.codeTTL = 60;
+        var intervel = setInterval(() => {
+          this.codeTTL--;
+          if (this.codeTTL == 0) {
+            this.codeMsg = "发送验证码";
+            clearInterval(intervel);
+          } else {
+            this.codeMsg = this.codeTTL + "s";
+          }
+        }, 1e3);
+      }
+    }
+  };
+  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", null, [
+      vue.createElementVNode("view", { class: "main-box" }, [
+        vue.createElementVNode("view", { class: "main" }, [
+          vue.createElementVNode("view", { class: "title" }, "免密登录"),
+          vue.createElementVNode("view", { class: "form-control" }, [
+            vue.createElementVNode("label", {
+              for: "",
+              class: "input_name"
+            }, "手机号码"),
+            vue.withDirectives(vue.createElementVNode(
+              "input",
+              {
+                type: "text",
+                class: "input_control",
+                "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $data.phone = $event)
+              },
+              null,
+              512
+              /* NEED_PATCH */
+            ), [
+              [vue.vModelText, $data.phone]
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "form-control" }, [
+            vue.createElementVNode("label", {
+              for: "",
+              class: "input_name"
+            }, "验证码"),
+            vue.createElementVNode("view", { class: "inline" }, [
+              vue.withDirectives(vue.createElementVNode(
+                "input",
+                {
+                  type: "text",
+                  class: "input_control-x",
+                  "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => $data.password = $event)
+                },
+                null,
+                512
+                /* NEED_PATCH */
+              ), [
+                [vue.vModelText, $data.password]
+              ]),
+              vue.createElementVNode(
+                "text",
+                {
+                  class: "send",
+                  onClick: _cache[2] || (_cache[2] = (...args) => $options.sendCode && $options.sendCode(...args))
+                },
+                vue.toDisplayString($data.codeMsg),
+                1
+                /* TEXT */
+              )
+            ])
+          ]),
+          vue.createElementVNode("view", {
+            class: "register",
+            onClick: _cache[3] || (_cache[3] = (...args) => $options.gotoRegister && $options.gotoRegister(...args))
+          }, "用户注册"),
+          vue.createElementVNode("view", {
+            class: "login",
+            onClick: _cache[4] || (_cache[4] = (...args) => $options.loginEvent && $options.loginEvent(...args))
+          }, "登录"),
+          vue.createElementVNode("view", { class: "option" }, [
+            vue.createElementVNode("view", {
+              class: "forget",
+              onClick: _cache[5] || (_cache[5] = (...args) => $options.gotoForget && $options.gotoForget(...args))
+            }, "忘记密码？"),
+            vue.createElementVNode("view", {
+              class: "code-login",
+              onClick: _cache[6] || (_cache[6] = (...args) => $options.toBackLogin && $options.toBackLogin(...args))
+            }, "密码登录")
+          ])
+        ])
+      ])
+    ]);
+  }
+  const PagesAuthCodeLogin = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__scopeId", "data-v-4b6da825"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/pages/auth/code-login.vue"]]);
+  const _sfc_main$1 = {
+    data() {
+      return {
+        phone: null,
+        password: null,
+        new_password: null,
+        codeMsg: "发送验证码",
+        codeTTL: 0
+      };
+    },
+    methods: {
+      isEmpty(value, msg) {
+        if (value == null || value == "") {
+          uni.showToast({
+            title: msg,
+            icon: "none"
+          });
+          throw new Error(msg);
+        }
+        return true;
+      },
+      loginEvent() {
+        this.isEmpty(this.phone, "手机号码不能为空");
+        this.isEmpty(this.password, "验证码不能为空");
+        this.isEmpty(this.new_password, "新密码不能为空");
+        var uri = "";
+        var postdata = {};
+        uri = "/api/user/password";
+        postdata = {
+          "phone": this.phone,
+          "code": this.password,
+          "newPassword": this.new_password
+        };
+        request.put(uri, postdata).then((res) => {
+          if (res.data.code == 200) {
+            uni.setStorageSync("auth_token", res.data.token);
+            uni.showToast({
+              title: "密码重置成功",
+              icon: "success"
+            });
+            uni.redirectTo({
+              url: "/pages/auth/login"
+            });
+          } else {
+            uni.showToast({
+              title: res.data.msg,
+              icon: "none"
+            });
+          }
+        });
+      },
+      passwordLogin() {
+        uni.navigateTo({
+          url: "/pages/account/login"
+        });
+      },
+      toBackLogin() {
+        uni.navigateTo({
+          url: "/pages/auth/login"
+        });
+      },
+      sendCode() {
+        if (this.codeTTL > 0)
+          return;
+        this.isEmpty(this.phone, "手机号码不能为空");
+        request.get("/api/user/code", {
+          phone: this.phone
+        }).then((res) => {
+          formatAppLog("log", "at pages/auth/forget.vue:240", res.data);
+          if (res.data.code == 200 || res.data.code == 500) {
+            uni.showToast({
+              title: res.data.msg,
+              icon: "none"
+            });
+          } else {
+            uni.showToast({
+              title: res.data.msg,
+              icon: "none"
+            });
+            return;
+          }
+        });
+        this.codeTTL = 60;
+        var intervel = setInterval(() => {
+          this.codeTTL--;
+          if (this.codeTTL == 0) {
+            this.codeMsg = "发送验证码";
+            clearInterval(intervel);
+          } else {
+            this.codeMsg = this.codeTTL + "s";
+          }
+        }, 1e3);
+      }
+    }
+  };
+  function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", null, [
+      vue.createElementVNode("view", { class: "main-box" }, [
+        vue.createElementVNode("view", { class: "main" }, [
+          vue.createElementVNode("view", { class: "title" }, "忘记密码"),
+          vue.createElementVNode("view", { class: "form-control" }, [
+            vue.createElementVNode("label", {
+              for: "",
+              class: "input_name"
+            }, "手机号码"),
+            vue.withDirectives(vue.createElementVNode(
+              "input",
+              {
+                type: "text",
+                class: "input_control",
+                "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $data.phone = $event)
+              },
+              null,
+              512
+              /* NEED_PATCH */
+            ), [
+              [vue.vModelText, $data.phone]
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "form-control" }, [
+            vue.createElementVNode("label", {
+              for: "",
+              class: "input_name"
+            }, "验证码"),
+            vue.createElementVNode("view", { class: "inline" }, [
+              vue.withDirectives(vue.createElementVNode(
+                "input",
+                {
+                  type: "text",
+                  class: "input_control-x",
+                  "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => $data.password = $event)
+                },
+                null,
+                512
+                /* NEED_PATCH */
+              ), [
+                [vue.vModelText, $data.password]
+              ]),
+              vue.createElementVNode(
+                "text",
+                {
+                  class: "send",
+                  onClick: _cache[2] || (_cache[2] = (...args) => $options.sendCode && $options.sendCode(...args))
+                },
+                vue.toDisplayString($data.codeMsg),
+                1
+                /* TEXT */
+              )
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "form-control" }, [
+            vue.createElementVNode("label", {
+              for: "",
+              class: "input_name"
+            }, "新密码"),
+            vue.withDirectives(vue.createElementVNode(
+              "input",
+              {
+                type: "password",
+                class: "input_control",
+                "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => $data.new_password = $event)
+              },
+              null,
+              512
+              /* NEED_PATCH */
+            ), [
+              [vue.vModelText, $data.new_password]
+            ])
+          ]),
+          vue.createElementVNode("view", {
+            class: "login",
+            onClick: _cache[4] || (_cache[4] = (...args) => $options.loginEvent && $options.loginEvent(...args))
+          }, "重置密码"),
+          vue.createElementVNode("view", { class: "option" }, [
+            vue.createElementVNode("view", {
+              class: "code-login",
+              onClick: _cache[5] || (_cache[5] = (...args) => $options.toBackLogin && $options.toBackLogin(...args))
+            }, "返回登录")
+          ])
+        ])
+      ])
+    ]);
+  }
+  const PagesAuthForget = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__scopeId", "data-v-93282f14"], ["__file", "E:/mobile_deployment/9合作开发/IVIZTaskX/pages/auth/forget.vue"]]);
   __definePage("pages/index/index", PagesIndexIndex);
   __definePage("pages/reserve/reserve", PagesReserveReserve);
+  __definePage("pages/auth/login", PagesAuthLogin);
+  __definePage("pages/auth/register", PagesAuthRegister);
+  __definePage("pages/auth/code-login", PagesAuthCodeLogin);
+  __definePage("pages/auth/forget", PagesAuthForget);
   const _sfc_main = {
     onLaunch: function() {
       formatAppLog("log", "at App.vue:4", "App Launch");

@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<button @click="jump360">360全景页面</button>
-		
+		<button @click="login">登录</button>
 	</view>
 </template>
 <style>
@@ -20,6 +20,11 @@
 			jump360(){
 				uni.navigateTo({
 					url:'/pages/reserve/reserve'
+				})
+			},
+			login(){
+				uni.navigateTo({
+					url:'/pages/auth/login'
 				})
 			}
 
